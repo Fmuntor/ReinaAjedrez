@@ -9,6 +9,10 @@ public enum Color{
 	public String cadenaAMostrar(){
 		return this.color;
 	}
-
+	@Override
+	public String toString() 
+	{
+		return "(this.color)";
+	}
 }
 
