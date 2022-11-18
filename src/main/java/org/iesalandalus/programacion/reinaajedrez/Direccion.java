@@ -1,5 +1,5 @@
 package org.iesalandalus.programacion.reinaajedrez;
-enum Direccion{
+public enum Direccion{
 	NORTE,
 	SUR, 
 	ESTE,
