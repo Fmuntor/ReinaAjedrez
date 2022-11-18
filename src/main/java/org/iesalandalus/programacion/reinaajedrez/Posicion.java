@@ -3,7 +3,7 @@ package org.iesalandalus.programacion.reinaajedrez;
 public class Posicion {
     private int fila;
     private char columna;
-    
+
     public void setFila(int fila){
         if(fila<=0 | fila>=9){
             throw new IllegalArgumentException("Fila incorrecta.");
@@ -48,6 +48,11 @@ public class Posicion {
     public char getColumna(){
         return this.columna;
     }
+
+private Posicion(int fila, char columna){
+    this.fila=fila;
+    this.columna=columna;
+}
     
 
 
