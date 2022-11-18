@@ -1,5 +1,7 @@
 package org.iesalandalus.programacion.reinaajedrez;
-enum Color{
+public enum Color{
 	BLANCO,
-	NEGRO
+	NEGRO;
+	private String cadenaAMostrar;
 }
+
