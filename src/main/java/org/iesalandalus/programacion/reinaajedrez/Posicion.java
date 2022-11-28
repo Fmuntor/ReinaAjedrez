@@ -49,13 +49,13 @@ public class Posicion {
         return this.columna;
     }
 
-private Posicion(int fila, char columna){
-    this.fila=getFila();
-    this.columna=getColumna();
+public Posicion(int fila, char columna){
+    setFila(fila);
+    setColumna(columna);
 }
-    
 
-
-
-
+public Posicion (Posicion posicion){
+    this.columna=posicion.columna;
+    this.fila=posicion.fila;
+}
 }
