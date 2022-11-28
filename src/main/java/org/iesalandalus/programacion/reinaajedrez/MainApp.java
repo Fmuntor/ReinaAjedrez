@@ -15,6 +15,8 @@ public class MainApp {
 			case 'd':mostrarReina();
 			break;
 		}	
-
+	}
+	private static void crearReinaDefecto(){
+		reina=new Reina();
 	}
 }
