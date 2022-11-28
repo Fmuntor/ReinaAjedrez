@@ -18,7 +18,7 @@ public class Consola {
                 System.out.println("Has elegido la opción a)Crear reina por defecto.");
                 return 'a';
             case 'b':
-                System.out.println("Has elegico la opción b)Crear reina eligiendo el color.");
+                System.out.println("Has elegido la opción b)Crear reina eligiendo el color.");
                 return 'b';
             case 'c':
                 System.out.println("Has elegido la opcion c)mover.");
