@@ -27,6 +27,16 @@ public class Consola {
                 System.out.println("Cerrando programa.");
                 return 'd';
         }   
-
 }
+    public static Color elegirOpcion(){
+        System.out.println("Introduce un color: ");
+        String color = Entrada.cadena();
+        while(color=="BLANCO"| color=="NEGRO"){
+            if(color=="BLANCO"){
+                return Color.BLANCO;
+            }else{
+                return Color.NEGRO;
+            }
+        }
+    }
 }
