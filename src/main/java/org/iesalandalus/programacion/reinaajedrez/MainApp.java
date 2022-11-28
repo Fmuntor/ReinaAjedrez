@@ -1,6 +1,6 @@
 package org.iesalandalus.programacion.reinaajedrez;
 public class MainApp {
-	Reina reina;		
+	static Reina reina;		
 	
 	private int ejecutarOpcion(){
 		Consola.mostrarMenu();
@@ -19,4 +19,8 @@ public class MainApp {
 	private static void crearReinaDefecto(){
 		reina=new Reina();
 	}
+	private static void crearReinaColor(){
+		reina=new Reina(color);
+	}
+	
 }
