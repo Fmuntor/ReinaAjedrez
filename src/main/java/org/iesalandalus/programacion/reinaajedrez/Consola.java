@@ -81,4 +81,7 @@ public class Consola {
         System.out.println("Te has movido "+pasos+" pasos.");
         return pasos;
     }
+    public static void despedida(){
+        System.out.println("¡Gracias por jugar!");
+    }
 }
