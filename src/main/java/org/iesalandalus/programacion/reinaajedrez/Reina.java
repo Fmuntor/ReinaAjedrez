@@ -1,5 +1,7 @@
 package org.iesalandalus.programacion.reinaajedrez;
 
+import javax.naming.OperationNotSupportedException;
+
 public class Reina {
     Color color;
     Posicion posicion;
@@ -25,6 +27,15 @@ public class Reina {
         }else{
             setPosicion(8,'b');
         }
+    }
+    public void mover(Direccion direccion, int pasos) throws OperationNotSupportedException {
+        if(direccion==null){
+            throw new IllegalArgumentException("Error: Dirección vacía.");
+        }
+        if(pasos <1 | pasos >7){
+            throw new OperationNotSupportedException("Error: El numero introducido es menor que 1 o mayor que 7.");
+        }
+        
     }
 }
 
