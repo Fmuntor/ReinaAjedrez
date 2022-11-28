@@ -42,4 +42,36 @@ public class Consola {
     public static void mostrarMenuDirecciones(){
         System.out.println("Las direcciones en las que se puede mover la reina son:\na)NORTE\nb)SUR\nc)ESTE\nd)OESTE\ne)NORESTE\nf)NOROESTE\ng)SURESTE\nh)SUROESTE");
     }
+    public static Direccion elegirDireccion(){
+        System.out.println("Elige una direccion: ");
+        String direccion=Entrada.cadena();
+        while(direccion=="NORTE" | direccion=="SUR" | direccion=="ESTE" | direccion=="OESTE" | direccion=="NORESTE" | direccion=="NORTOESTE" | direccion=="SURESTE" | direccion=="SUROESTE"){
+        switch(direccion){
+            case "NORTE":
+                System.out.println("Has elegido el norte.");
+                return "NORTE";
+            case "SUR":
+                System.out.println("Has elegido el sur.");
+                return "SUR";
+            case "ESTE":
+                System.out.println("Has elegido el este.");
+                return "ESTE";
+            case "OESTE":
+                System.out.println("Has elegido el oeste.");
+                return "OESTE";
+            case "NORESTE":
+                System.out.println("Has elegido el noreste.");
+                return "NORESTE";
+            case "NOROESTE":
+                System.out.println("Has elegido el noroeste.");
+                return "NOROESTE";
+            case "SURESTE":
+                System.out.println("Has elegido el sureste.");
+                return "SURESTE";
+            case "SUROESTE":
+                System.out.println("Has elegido el suroeste.");
+                return "SUROESTE";
+        }   
+    }
+}
 }
