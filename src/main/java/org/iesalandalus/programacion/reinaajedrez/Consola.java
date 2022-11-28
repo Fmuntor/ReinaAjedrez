@@ -39,4 +39,7 @@ public class Consola {
             }
         }
     }
+    public static void mostrarMenuDirecciones(){
+        System.out.println("Las direcciones en las que se puede mover la reina son:\na)NORTE\nb)SUR\nc)ESTE\nd)OESTE\ne)NORESTE\nf)NOROESTE\ng)SURESTE\nh)SUROESTE");
+    }
 }
