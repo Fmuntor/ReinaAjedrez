@@ -17,7 +17,7 @@ public class Reina {
     private void setPosicion(Posicion posicion) {
         this.posicion = posicion;
     }
-    public Reina() {
+    public void Reina() {
         this.color = Color.BLANCO;
         this.posicion=setPosicion(1,'d');
     }
