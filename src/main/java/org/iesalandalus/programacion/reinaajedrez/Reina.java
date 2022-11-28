@@ -17,8 +17,14 @@ public class Reina {
     }
     public Reina() {
         this.color = Color.BLANCO;
-        this.posicion=getPosicion('1d');
+        this.posicion=setPosicion(1,'d');
     }
-
+    public Reina(Color color){
+        if (color==color.BLANCO){
+            setPosicion(1,'d');
+        }else{
+            setPosicion(8,'b');
+        }
+    }
 }
 
