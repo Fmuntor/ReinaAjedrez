@@ -22,5 +22,7 @@ public class MainApp {
 	private static void crearReinaColor(){
 		reina=new Reina(color);
 	}
-	
+	private static void mover(){
+		reina=Reina.mover();
+	}
 }
