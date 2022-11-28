@@ -58,4 +58,26 @@ public Posicion (Posicion posicion){
     this.columna=posicion.columna;
     this.fila=posicion.fila;
 }
+@Override
+public int hashCode() {
+    int hash = 7;
+    hash = 97 * hash + fila;
+    hash = 97 * hash + columna;
+    return hash;
+}
+@Override
+public boolean equals(Object obj) {
+    if (this == obj)
+        return true;
+    if (obj == null)
+        return false;
+    if (getClass() != obj.getClass())
+        return false;
+    Posicion other = (Posicion) obj;
+    if (fila != other.fila)
+        return false;
+    if (columna != other.columna)
+        return false;
+    return true;
+}
 }
