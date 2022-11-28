@@ -12,34 +12,34 @@ public class Posicion {
             this.fila = fila;
         }
     }
-    public void setColumna(String columna){
+    public void setColumna(char columna){
         switch (columna) {
-            case "a":
-                this.columna=columna.charAt(0);
+            case 'a':
+                this.columna=columna;
                 break;
-            case "b":
-                this.columna=columna.charAt(0);
+            case 'b':
+                this.columna=columna;
                 break;
-            case "c":
-                this.columna=columna.charAt(0);
+            case 'c':
+                this.columna=columna;
                 break;
-            case "d":
-                this.columna=columna.charAt(0);
+            case 'd':
+                this.columna=columna;
                 break;
-            case "e":
-                this.columna=columna.charAt(0);
+            case 'e':
+                this.columna=columna;
                 break;
-            case "f":
-                this.columna=columna.charAt(0);
+            case 'f':
+                this.columna=columna;
                 break;
-            case "g":
-                this.columna=columna.charAt(0);
+            case 'g':
+                this.columna=columna;
                 break;
-            case "h":
-                this.columna=columna.charAt(0);
+            case 'h':
+                this.columna=columna;
                 break;
             default:
-            throw new IllegalArgumentException("Fila incorrecta.");
+            throw new IllegalArgumentException("Columna incorrecta.");
         }
     }
     public int getFila(){
@@ -50,8 +50,8 @@ public class Posicion {
     }
 
 private Posicion(int fila, char columna){
-    this.fila=fila;
-    this.columna=columna;
+    this.fila=getFila();
+    this.columna=getColumna();
 }
     
 
