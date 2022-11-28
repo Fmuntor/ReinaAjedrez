@@ -1,7 +1,7 @@
 package org.iesalandalus.programacion.reinaajedrez;
 public class MainApp {
 	static Reina reina;		
-	
+	public static void main(String[] args) {
 	private int ejecutarOpcion(){
 		Consola.mostrarMenu();
 		char opcion=Consola.elegirOpcionMenu();
@@ -25,4 +25,8 @@ public class MainApp {
 	private static void mover(){
 		reina=Reina.mover();
 	}
+	private static void mostrarReina(){
+		Reina.toString();
+	}
+}
 }
