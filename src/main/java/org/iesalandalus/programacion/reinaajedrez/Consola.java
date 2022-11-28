@@ -45,8 +45,9 @@ public class Consola {
     public static Direccion elegirDireccion(){
         System.out.println("Elige una direccion: ");
         String direccion=Entrada.cadena();
-        while(direccion=="NORTE" | direccion=="SUR" | direccion=="ESTE" | direccion=="OESTE" | direccion=="NORESTE" | direccion=="NORTOESTE" | direccion=="SURESTE" | direccion=="SUROESTE"){
-        switch(direccion){
+        while(direccion=="NORTE" | direccion=="SUR" | direccion=="ESTE" | direccion=="OESTE" | direccion=="NORESTE" | direccion=="NORTOESTE" | direccion=="SURESTE" | direccion=="SUROESTE")
+        {switch(direccion){
+        
             case "NORTE":
                 System.out.println("Has elegido el norte.");
                 return "NORTE";
@@ -73,5 +74,11 @@ public class Consola {
                 return "SUROESTE";
         }   
     }
-}
+    }
+    public static int elegirPasos(){
+        System.out.println("Escribe el número de pasos a mover: ");
+        int pasos=Entrada.entero();
+        System.out.println("Te has movido "+pasos+" pasos.");
+        return pasos;
+    }
 }
